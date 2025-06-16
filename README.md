@@ -106,8 +106,9 @@ VITE_FIREBASE_PROJECT_ID=your_project_id
 
 ## 🤝 Contributors
 
+* [Manya Rawat](https://github.com/manya014)
 * [Dakshita Singh](https://github.com/DakshitaSingh)
-* [Your Name](https://github.com/manya014)
+
 
 ---
 
