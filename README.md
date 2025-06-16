@@ -1,6 +1,6 @@
-# TheShopMania 🛍️
+# Shop-Mania 🛍️
 
-**TheShopMania** is a full-fledged e-commerce platform built using modern web technologies, aiming to deliver a seamless and intuitive online shopping experience. The application allows users to browse products, manage wishlists, authenticate securely, and enjoy a responsive UI design across devices.
+**Shop-Mania** is a full-fledged e-commerce platform built using modern web technologies, aiming to deliver a seamless and intuitive online shopping experience. The application allows users to browse products, manage wishlists, authenticate securely, and enjoy a responsive UI design across devices.
 
 ---
 
@@ -76,8 +76,8 @@ TheShopMania/
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/DakshitaSingh/TheShopMania.git
-$ cd TheShopMania/client
+$ git clone https://github.com/manya014/Shop-Mania.git
+$ cd Shop-Mania/client
 
 # Install dependencies
 $ npm install
@@ -99,8 +99,10 @@ VITE_FIREBASE_PROJECT_ID=your_project_id
 ---
 
 ## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/9965f9ac-7a75-4dfb-a928-b11bfbd440c1)
+![image](https://github.com/user-attachments/assets/c4f7959b-29fc-4c54-a881-e76901e35b47)
 
-> *(Add UI screenshots here to showcase homepage, product listing, wishlist, etc.)*
+> 
 
 ---
 
