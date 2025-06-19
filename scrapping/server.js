@@ -17,11 +17,17 @@ let isBrowserInitialized = false;
 async function startBrowser() {
   if (!isBrowserInitialized) {
     console.log("Initializing Puppeteer browser instance...");
-    await initializeBrowser();
-    isBrowserInitialized = true;
-    console.log("Puppeteer browser initialized.");
+    try {
+      await initializeBrowser();
+      isBrowserInitialized = true;
+      console.log("Puppeteer browser initialized.");
+    } catch (err) {
+      console.error("❌ Browser init failed:", err.message);
+      process.exit(1); // Exit safely, or remove this in dev mode
+    }
   }
 }
+
 startBrowser(); // Call the initialization function when the server starts
 
 // --- Middleware ---

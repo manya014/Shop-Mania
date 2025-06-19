@@ -68,8 +68,8 @@ const Dashboard = () => {
             key={plat}
             onClick={() => {
               setPlatform(plat);
-              setCategory('men');
-              setSearchQuery('');
+              // setCategory('men');
+              // setSearchQuery('');
             }}
             className={`px-6 py-2 rounded-full font-semibold shadow-md transition-all duration-300 ${
               platform === plat ? 'bg-blue-600 text-white scale-105' : 'bg-white text-gray-700 hover:bg-blue-100'

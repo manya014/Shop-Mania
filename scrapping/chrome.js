@@ -34,19 +34,26 @@ async function findChrome() {
 }
 
 const launchBrowser = async () => {
-  const executablePath = await findChrome();
+  try {
+    const executablePath = await findChrome();
 
-  return puppeteer.launch({
-    headless: 'new', // Using new headless mode
-    executablePath,
-    args: [
-      '--no-sandbox',
-      '--disable-setuid-sandbox',
-      '--disable-dev-shm-usage',
-      // '--single-process' // Removed this flag as it can sometimes cause issues
-      // '--disable-gpu' // Often useful in headless environments
-    ]
-  });
+    const browser = await puppeteer.launch({
+      headless: 'new', // or true if 'new' fails in your env
+      executablePath,
+      args: [
+        '--no-sandbox',
+        '--disable-setuid-sandbox',
+        '--disable-dev-shm-usage'
+      ]
+    });
+
+    console.log("✅ Browser launched successfully.");
+    return browser;
+  } catch (err) {
+    console.error("❌ Failed to launch browser:", err.message);
+    throw err; // rethrow so server.js knows
+  }
 };
+
 
 module.exports = launchBrowser;
