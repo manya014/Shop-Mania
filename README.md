@@ -6,7 +6,7 @@
 
 ## 🌐 Live Demo
 
-Will deploy it soon!
+https://the-shop-mania.vercel.app/
 
 ---
 
